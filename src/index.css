@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+/* UTILITIES  */
+
+/* HEADER */
+.logo-header {
+  margin: 20px 0px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.menu li {
+  margin: 0px 15px;
+  font-size: 15px;
+}
+
+.menu li.active {
+  border-bottom: 5px solid #0080f5;
+}
+
+.menu li.active a {
+  color: #0080f5;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}

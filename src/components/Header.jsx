@@ -1,15 +1,14 @@
 const Header = () => {
   return (
-    <div>
       <div className="container">
         <div className="row">
-          <div className="col-50">
+          <div className="col-25">
             <div className="logo-header">
               <img src="./img/dc-logo.png" alt="DC Logo" />
             </div>
           </div>
-          <div className="col-50">
-            <ul id="menu">
+          <div className="col-75">
+            <ul className="menu">
               <li>
                 <a href="#">CHARACTERS</a>
               </li>
@@ -44,7 +43,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
