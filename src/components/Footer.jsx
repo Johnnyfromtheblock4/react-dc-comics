@@ -108,7 +108,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-25 sign-up">
               <p>
-                <a href="#">SIGN UP NOW</a>
+                <a href="#">SIGN UP NOW!</a>
               </p>
             </div>
             <div className="col-75 socials">

@@ -138,7 +138,7 @@ footer {
   height: 480px;
   position: fixed;
   z-index: 1;
-  bottom: 190px;
+  bottom: 100px;
   right: -70px;
 }
 
@@ -155,11 +155,21 @@ footer {
 
 .sign-up p {
   margin-top: 35px;
-  border: 2px solid;
+  border: 2px solid #0080f5;
+  padding: 10px;
+}
+.sign-up a {
+  text-decoration: none;
+  color: white;
 }
 
 .socials {
+  margin-top: 35px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.socials a {
+  padding-left: 15px;
 }
