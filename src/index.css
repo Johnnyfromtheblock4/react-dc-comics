@@ -11,7 +11,7 @@ body {
 main {
   background-color: #1c1c1c;
   color: white;
-  padding: 25px 0px;
+  padding: 50px 0px;
 }
 
 footer {
@@ -88,7 +88,7 @@ footer {
 /* Top Footer */
 .top-footer {
   background-color: #0080f5;
-  padding: 30px 0px;
+  padding: 50px 0px;
   position: relative;
   z-index: 2;
 }
@@ -143,3 +143,23 @@ footer {
 }
 
 /* Bottom Footer */
+.bottom-footer {
+  background-color: #303030;
+  height: 100px;
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up p {
+  margin-top: 35px;
+  border: 2px solid;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
