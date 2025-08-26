@@ -70,11 +70,11 @@ footer {
   font-size: 15px;
 }
 
-.menu li.active {
+.menu li a.active {
   border-bottom: 5px solid #0080f5;
 }
 
-.menu li.active a {
+.menu li a.active {
   color: #0080f5;
 }
 
