@@ -11,7 +11,7 @@ body {
 main {
   background-color: #1c1c1c;
   color: white;
-
+  position: relative;
 }
 
 footer {
@@ -92,15 +92,44 @@ footer {
   object-position: top;
 }
 
+.main-title {
+  background-color: #0080f5;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: relative;
+  margin-top: -35px;
+  z-index: 2;
+}
+
 .lista-fumetti {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .lista-fumetti img {
   max-width: 200px;
-  
+  height: 300px;
+  object-fit: cover;
 }
+
+.lista-fumetti h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  max-width: 200px;
+}
+
+.load-more {
+  background-color: #0080f5;
+  color: white;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 40px;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
 /* FOOTER */
 /* Top Footer */
 .top-footer {
@@ -149,20 +178,26 @@ footer {
   font-size: 15px;
 }
 
+.col-33 ul li a {
+  text-decoration: none;
+  color: rgb(174, 174, 174);
+}
+
 .background-dc {
   background-image: url("../img/dc-logo-bg.png");
   background-repeat: no-repeat;
+  background-position: center -60px;
   height: 480px;
-  position: fixed;
+  position: sticky;
   z-index: 1;
-  bottom: 100px;
-  right: -70px;
 }
 
 /* Bottom Footer */
 .bottom-footer {
   background-color: #303030;
   height: 100px;
+  position: relative;
+  z-index: 2;
 }
 
 .sign-up {
