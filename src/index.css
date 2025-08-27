@@ -31,7 +31,7 @@ footer {
 }
 
 .col-16 {
-  width: calc(100% / 6);
+  width: calc(100% / 6 - 20px);
 }
 
 .col-25 {
@@ -55,6 +55,13 @@ footer {
 }
 
 /* UTILITIES  */
+.pt-70 {
+  padding-top: 70px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
 
 /* HEADER */
 .logo-header {
@@ -74,11 +81,11 @@ footer {
   font-size: 15px;
 }
 
-.menu li a.active {
+.menu li.active {
   border-bottom: 5px solid #0080f5;
 }
 
-.menu li a.active {
+.menu li.active a {
   color: #0080f5;
 }
 
@@ -98,18 +105,13 @@ footer {
 
 .main-title {
   background-color: #0080f5;
-  width: 300px;
   padding: 10px 20px;
   font-size: 30px;
-  position: relative;
-  margin-top: -35px;
+  position: absolute;
   z-index: 2;
-}
-
-.lista-fumetti {
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
+  top: -30px;
+  left: 0;
 }
 
 .comics-card {
@@ -127,13 +129,7 @@ footer {
   object-fit: cover;
 }
 
-.lista-fumetti img {
-  max-width: 200px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.lista-fumetti h3 {
+.comic-card h3 {
   font-size: 15px;
   text-transform: uppercase;
   max-width: 200px;

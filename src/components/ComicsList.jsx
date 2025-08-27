@@ -184,18 +184,18 @@ const ComicsList = () => {
         alt="Jumbotron"
         className="jumbotron"
       />
-      <div className="container">
+      <div className="container pt-70">
         <h2 className="main-title">CURRENT SERIES</h2>
         <div className="row">
-          <div className="col-12 lista-fumetti">
-            {comics.map((comic) => (
+          {comics.map((comic) => (
+            <div className="col-16 gap-20">
               <div key={comic.id} className="comic-card">
                 <img src={comic.thumb} alt={comic.title} />
                 <h3>{comic.series}</h3>
               </div>
-            ))}
-            <button className="load-more">Load More</button>
-          </div>
+            </div>
+          ))}
+          <button className="load-more">Load More</button>
         </div>
       </div>
     </main>

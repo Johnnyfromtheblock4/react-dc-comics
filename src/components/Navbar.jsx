@@ -68,10 +68,8 @@ const Navbar = () => {
           // metodo deconstractor
           const { id, label, href, current } = link;
           return (
-            <li key={id}>
-              <a href={href} className={current === true ? "active" : ""}>
-                {label}
-              </a>
+            <li key={id} className={current === true ? "active" : ""}>
+              <a href={href}>{label}</a>
             </li>
           );
         })}
