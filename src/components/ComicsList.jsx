@@ -1,4 +1,4 @@
-import React from "react";
+import ComicCard from "./ComicCard";
 // Importazione non utilizzata al momento, ma lasciata per riferimento
 // import comics from "../assets/comics";
 
@@ -179,22 +179,22 @@ const ComicsList = () => {
 
   return (
     <main>
-      <img
-        src="./img/jumbotron.jpg"
-        alt="Jumbotron"
-        className="jumbotron"
-      />
+      <img src="./img/jumbotron.jpg" alt="Jumbotron" className="jumbotron" />
       <div className="container pt-70">
         <h2 className="main-title">CURRENT SERIES</h2>
         <div className="row gap-20">
-          {comics.map((comic) => (
-            <div className="col-16">
-              <div key={comic.id} className="comic-card">
-                <img src={comic.thumb} alt={comic.title} />
-                <h3>{comic.series}</h3>
-              </div>
-            </div>
-          ))}
+          {comics.map((comic) => {
+            const { id, thumb, title, series } = comic;
+            return (
+              <ComicCard
+                id={id}
+                thumb={thumb}
+                title={title}
+                series={series}
+                key={id}
+              />
+            );
+          })}
           <button className="load-more">Load More</button>
         </div>
       </div>
