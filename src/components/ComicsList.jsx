@@ -180,15 +180,15 @@ const ComicsList = () => {
   return (
     <main>
       <img
-        src="../public/img/jumbotron.jpg"
+        src="./img/jumbotron.jpg"
         alt="Jumbotron"
         className="jumbotron"
       />
       <div className="container pt-70">
         <h2 className="main-title">CURRENT SERIES</h2>
-        <div className="row">
+        <div className="row gap-20">
           {comics.map((comic) => (
-            <div className="col-16 gap-20">
+            <div className="col-16">
               <div key={comic.id} className="comic-card">
                 <img src={comic.thumb} alt={comic.title} />
                 <h3>{comic.series}</h3>
